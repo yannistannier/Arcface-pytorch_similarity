@@ -1,0 +1,26 @@
+{
+    "name" : "icon50_resnet50",
+    "backbone": "resnet50",
+    "loss": "focal_loss", 
+    "batch_size": 64, 
+    "num_classes" : 50,
+    "gpu": 0, 
+    "train_root": "", 
+    "train_list": "./train_arcface.csv", 
+
+    "val_root": "", 
+    "val_list": "./val_arcface.csv", 
+
+    "input_shape": [3, 120, 120], 
+    "checkpoints_path": "./models/",
+    "pretrained": true,
+    "pooling": "gem",
+    "lr":0.01,
+    "lr_step": [33,66,100],
+    "max_epoch" : 150,
+    "margin": 0.7,
+    "save_interval":150,
+
+    "load_model_path":"",
+    "load_margin_path": ""
+}
