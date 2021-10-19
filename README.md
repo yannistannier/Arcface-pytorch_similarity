@@ -11,7 +11,7 @@ pip install -r requirements.txt
 
 # Quick Start
 
-## How to run a training
+### How to run a training
 
 1. Create au json configuration file in .config
 
@@ -52,7 +52,7 @@ python train.py --config=./config/example.json
 A folder of the experiment name will be create in the "chekpoint_path"
 
 
-## How to extract embedding from pretrain model
+### How to extract embedding from pretrain model
 
 ```
 python extract_feature.py --config=./models/experiment_name/config.json --path_save=[path to save feature] --list_images=[path to txt file with path of all images]
