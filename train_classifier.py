@@ -1,6 +1,5 @@
 from __future__ import print_function
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 import json
 import argparse
 import torch
@@ -219,11 +218,6 @@ if __name__ == '__main__':
     start = time.time()
 
     count_total_params(model)
-    # print('{} train iters per epoch'.format(len(trainloader)))
-
-    # for name, param in model.named_parameters():
-    #     if not 'fc' in name:
-    #         param.requires_grad = False
     
     for i in range(opt.max_epoch):
         model.train()
